@@ -87,7 +87,9 @@ vulputate eget, arcu.</p>
                </div>             
             </div>
         </div>
+        <button class="up"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
     </div>
+    
 <!--    ----------  works --------------->
     <div class="works" id="works">
         <div class="container">
@@ -355,7 +357,6 @@ nostrud exercitation ullamco laboris</p>
        </div>
        <div class="form col-sm-6 col-xs-12">
          <form>
-         
           <div class="field">
                <label for="name">Name</label>
                <input id="name" name="name" type="text">
@@ -373,7 +374,7 @@ nostrud exercitation ullamco laboris</p>
                <textarea id="messeage" name="messeage" id="" cols="30" rows="10"></textarea>
              </div>
              <div class="field">
-                <button type="submit">Submit</button>
+                <button id="submit" type="button" onclick="validate(this.form)">Submit</button>
              </div>
            </form>
        </div>
@@ -407,8 +408,8 @@ nostrud exercitation ullamco laboris</p>
     <script src="js/waypoints.min.js"></script>
     <script src="js/animate_css.js"></script>    
     <script src="js/bootstrap.min.js"></script> 
-    <script src="js/main.js"></script>
     <script src="js/validation.js"></script>
+    <script src="js/main.js"></script>
     
 </body>
 </html>

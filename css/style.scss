@@ -1,10 +1,8 @@
 $padding-responsive:  100px;
 
-
-.error-box{
-    color: red;
-    font-size: 12px;
-}
+.error {
+      border: 1px solid #BA3C34 !important;
+    }
 
 .header2{
     font-size: 26px;
@@ -88,6 +86,7 @@ ol, ul {list-style: none;}
 
 .header{
     background-image: url(../img/bg.png);
+    z-index: 10001;
     height: 100vh;
     max-height: 700px;
     overflow: hidden;
@@ -133,7 +132,6 @@ ol, ul {list-style: none;}
     
     
     button{
-//        display: inline-block;
         background: none;
         border: none;
         height: 30px;
@@ -194,6 +192,7 @@ ol, ul {list-style: none;}
     color: #29323c;
     font-family: "Open Sans";
     padding: $padding-responsive - 10px 0;
+    position: relative;
     
     h2{ @extend .header2; }
     h5{ @extend .header5; }
@@ -238,6 +237,20 @@ ol, ul {list-style: none;}
         font-size: 12px;
         line-height: 20px;
     }
+    
+        button.up{
+        position: fixed;
+        z-index: 10000;
+        right: 30px;
+        top: 30px;
+        width: 30px;
+        height: 30px;
+        @include border-radius(50%);
+        background-color: rgba(1,1,1,0.3);
+        color: #e7e7e7;
+        font-size: 14px;
+        border: 1px solid #e7e7e7;
+    }
 }
 
 //end services - start works
@@ -245,6 +258,7 @@ ol, ul {list-style: none;}
 .works{
     border-color: #ffffff;
     padding: $padding-responsive 0;
+    position: relative;
     color: #29323c;
     overflow: hidden;
     
@@ -301,6 +315,7 @@ ol, ul {list-style: none;}
     
     color: #29323c;
     margin-bottom: $padding-responsive;
+    position: relative;
     
     h2{ @extend .header2; }
     h5{ @extend .header5; }
@@ -372,6 +387,7 @@ ol, ul {list-style: none;}
 
 .team{
     padding: $padding-responsive 0;
+    position: relative;
     background-image: url(../img/team_bg.jpg);
     background-repeat: no-repeat;
     color: #f2f2f2;
@@ -508,7 +524,6 @@ ol, ul {list-style: none;}
                 background-clip: padding-box;
             }
     }
-    
 }
 
 //---------- end team -------------
@@ -541,6 +556,7 @@ ol, ul {list-style: none;}
 .pricing{
     
     padding: $padding-responsive 0;
+    position: relative;
     
     .pricing_top{
         h2{ @extend .header2; }
@@ -674,8 +690,6 @@ ol, ul {list-style: none;}
         right: 0;
         bottom: 0;
         float: left;
-        
-//        height="585px" width="100%"
     }
     
     .form{
@@ -694,8 +708,6 @@ ol, ul {list-style: none;}
         lable,
         textarea
         {
-//            display: block;
-//            margin: 0 auto;
             background-color: transparent;
             box-shadow: none;
             border: 1px solid rgba(221,221,221,.7);
