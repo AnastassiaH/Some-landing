@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no">
     <title>Some landing</title>
 </head>
@@ -43,7 +45,7 @@
                     <h2 class="col-md-offset-3 col-md-6">Something Nothing</h2>
                     <h5 class="col-md-offset-2 col-md-8">Enean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim iam ultricies nisi eleifend tellus.</h5>
                     <div class="col-md-12 talk">
-                        <button>Let's Talk</button>
+                        <button><a href="#popUp" class="fancybox">Let's Talk</a></button>
                     </div>
                 </div>
             </div>
@@ -359,23 +361,23 @@ nostrud exercitation ullamco laboris</p>
          <form>
           <div class="field">
                <label for="name">Name</label>
-               <input id="name" name="name" type="text">
+               <input id="name" name="name" type="text" required>
            </div>
            <div class="field">
                <label for="email">Email</label>
-               <input id="email" name="email" type="text">
-             </div>
-             <div class="field">
+               <input id="email" name="email" type="text" required>
+            </div>
+            <div class="field">
                <label for="phone">Phone</label>
-               <input id="phone" name="phone" type="text">
-             </div>
-             <div class="field">
+               <input id="phone" name="phone" type="text" required>
+            </div>
+            <div class="field">
                <label for="messeage">Messeage</label>
                <textarea id="messeage" name="messeage" id="" cols="30" rows="10"></textarea>
-             </div>
-             <div class="field">
-                <button id="submit" type="button" onclick="validate(this.form)">Submit</button>
-             </div>
+            </div>
+            <div class="field">
+                <button id="submit" type="button">Submit</button>
+            </div>
            </form>
        </div>
        </div>
@@ -402,13 +404,38 @@ nostrud exercitation ullamco laboris</p>
            </div>
        </div>
    </div>
+   
+   <div class="hidd">
+       <form id="popUp">
+          <div class="field">
+               <label for="name">Name</label>
+               <input id="name" name="name" type="text" required>
+           </div>
+           <div class="field">
+               <label for="email">Email</label>
+               <input id="email" name="email" type="text" required>
+             </div>
+             <div class="field">
+               <label for="phone">Phone</label>
+               <input id="phone" name="phone" type="text" required>
+             </div>
+             <div class="field">
+               <label for="messeage">Messeage</label>
+               <textarea id="messeage" name="messeage" id="" cols="30" rows="10"></textarea>
+             </div>
+             <div class="field">
+                <button id="submit" type="button">Submit</button>
+             </div>
+           </form>
+   </div>
     
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/JQuery.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/animate_css.js"></script>    
     <script src="js/bootstrap.min.js"></script> 
-    <script src="js/validation.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
     <script src="js/main.js"></script>
     
 </body>

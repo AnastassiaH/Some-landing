@@ -17,4 +17,8 @@ $(document).ready(function(){
         return false;
         });  
     
+    $(".fancybox").fancybox();
+    
+    $(".header a").mPageScroll2id();
+    
     });
