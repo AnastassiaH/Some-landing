@@ -1,3 +1,6 @@
+.hidd {
+  display: none; }
+
 .header2, .services h2, .works h2, .clients h2, .team h2, .pricing .pricing_top h2 {
   font-size: 26px;
   font-family: "Open Sans ExtraBold";
